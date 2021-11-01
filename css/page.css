@@ -1,0 +1,297 @@
+/*CSS RESET*/
+html{
+    scroll-behavior: smooth;
+}
+#container{
+    position: fixed;
+    display: flex;
+    background-color: rgb(59, 58, 58);
+    opacity: 0.89;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;}
+
+.session{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s; }
+    
+#moodle{
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 600px;
+    height: auto;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+#bttn{
+    background-color: green;
+    color: white;
+    box-shadow: rgb(23, 23, 22);
+    height: 40px;
+}
+#bttn:hover{
+    cursor: pointer;
+}
+
+/* navigation bar*/
+#navbar{
+   
+    display: flex;
+    
+    align-items: center;
+    right: 0px;
+    left: 0px;
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    margin: 6px 6px;
+}
+#logo img{
+    height: 62px;
+
+    margin: 2px;
+    position: relative;
+    left: 12px;
+}
+#navbar ul{
+    display: flex
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size:17px;
+    position: relative;
+
+}
+#navbar ul li a{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    /* margin: auto; */
+    display: block;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(252, 250, 248);
+    border: 4px solid rgb(250, 250, 249);
+    border-radius: 16px;
+    color: black;
+
+}      
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px}
+
+
+/*home*/
+#home::before{
+    content:"";
+    position: absolute;
+    background:url('boy.jpg') no-repeat center center/cover;
+    height:662px;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.9;
+   top: 0px;}
+
+ #home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     top: 0px;
+     left: 0px;
+     
+     height:  574px;;
+     padding: 3px 300px;
+ }
+ #home .p1{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2px;
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+}
+ /*all time*/
+.primaryhead{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size:2.8rem;
+    padding: 12px;
+    margin: 0px;
+    color:rgb(247, 241, 241);
+    text-align: center;
+    height: 100px;
+}
+.bttn{
+    border: 2px solid black;
+    border-radius: 12px;
+    padding:12px;
+    margin:8px;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.bttn:hover{
+    cursor: pointer;
+    color: coral;
+}
+.secondaryhead{
+    text-align: center;
+    font-size: 2rem;
+
+}
+.phead{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size:2.8rem;
+    padding: 12px;
+    margin: 0px;
+    color:rgb(5, 5, 5);
+    text-align: center;
+}
+
+
+
+
+/*services*/
+#services{
+    display: flex;
+    justify-content: center;
+}
+ .img{
+    height: 160px;
+    width: 260px;
+    padding: 40px;
+    margin: 20px;
+   
+    display: block;
+    margin: auto;
+   
+ }
+ #imgsec{
+    border: 4px solid black;
+    border-radius: 18px;
+    width: 380px;
+    margin: 20px;
+    background-color: rgb(228, 225, 225);
+ }
+
+ #imgsec2{
+    border: 4px solid black;
+    border-radius: 18px;
+    width: 380px;
+    margin: 20px; 
+}
+.p2{
+    width: 300px;
+    /* padding: 8px; */
+    text-align: center;
+}
+ 
+/*client*/
+.er{
+    background-color: rgb(234 233 218);
+    display: flex;
+    justify-content: center;
+   
+}
+.er2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo1{
+    height: 100px;
+    width: 90px;
+    padding: 20px;
+    margin: 20px;
+}
+.logo{ height: 100px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+
+/*contacts*/
+
+#contacts{
+    position: relative;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#contacts::before{
+    content:"";
+   background: url('med.jpg')  no-repeat center center/cover;
+    height: 520px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px
+    }
+
+.form{
+  margin: 10px;
+  padding: 15px;
+}
+.input1{
+    border:4px solid black;
+    border-radius: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    }
+
+.clubs{
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+}
+.bttn2{
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding:12px;
+ 
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.bttn2:hover{
+    cursor: pointer;
+    color: coral;
+
+}
+
+
+
+
+
